@@ -1,3 +1,4 @@
+# The Whole Utils Directory was copied from github.com/Microsoft/uf2
 # uf2conv -- Packing and unpacking UF2 files
 
 ## SYNOPSIS
