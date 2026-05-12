@@ -1,0 +1,14 @@
+[package]
+name = "fm-radio"
+version = "0.1.0"
+edition = "2024"
+
+[[bin]]
+name = "fm-radio"
+path = "src/main.rs"
+test = false
+bench = false
+
+[dependencies]
+panic-halt = "0.2"
+trinket_m0 = { version = "0.11.1", features = ["rt"] }

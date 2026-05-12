@@ -1,0 +1,9 @@
+# SAMD21 is Cortex-M0+ → thumbv6m
+[build]
+target = "thumbv6m-none-eabi"
+
+[target.thumbv6m-none-eabi]
+rustflags = [
+    "-C", "link-arg=--nmagic",
+    "-C", "link-arg=-Tlink.x",
+]
