@@ -6,13 +6,13 @@ default: bin
 
 bin:
     cargo build --release
-    arm-none-eabi-objcopy -O binary target/{{target}}/release/fm-radio target/{{target}}/release/fm-radio.bin
-    python3 utils/uf2conv.py -c -o target/{{target}}/release/fm-radio.uf2 target/{{target}}/release/fm-radio.bin
+    arm-none-eabi-objcopy -O binary target/{{target}}/release/fm-pocket-radio target/{{target}}/release/fm-pocket-radio.bin
+    python3 utils/uf2conv.py -c -o target/{{target}}/release/fm-pocket-radio.uf2 target/{{target}}/release/fm-pocket-radio.bin
 
 debug:
     cargo build
-    arm-none-eabi-objcopy -O binary target/{{target}}/debug/fm-radio target/{{target}}/debug/fm-radio.bin
-    python3 utils/uf2conv.py -c -o target/{{target}}/debug/fm-radio.uf2 target/{{target}}/debug/fm-radio.bin
+    arm-none-eabi-objcopy -O binary target/{{target}}/debug/fm-pocket-radio target/{{target}}/debug/fm-pocket-radio.bin
+    python3 utils/uf2conv.py -c -o target/{{target}}/debug/fm-pocket-radio.uf2 target/{{target}}/debug/fm-pocket-radio.bin
 
 clean:
     cargo clean
